@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+}
+
+::selection {
+	color: #fff;
+	background: #43affc;
+}
+
+.wrapper {
+	width: 400px;
+	background: #fff;
+	border-radius: 7px;
+	background-color: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card-header button {
+	background-color: transparent;
+	border: none;
+}
+
+.location .accordion-body button {
+	border: none;
+	border-radius: 7px;
+	font-size: 18px;
+	background-color: #778899;
+	color: #fff;
+	cursor: pointer;
+	width: 100%;
+	height: 55px;
+}
+
+.location .accordion-body button:hover {
+	background-color: #4f6c8a;
+}
+
+.city .accordion-body input {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: center;
+	padding: 0 12px;
+	width: 100%;
+	height: 55px;
+}
+
+#accordionDisplay {
+	display: none;
+}
+
+#accordionDisplay img {
+	max-width: 155px;
+}
+
+.today .accordion-body,
+.tomorrow .accordion-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+	body {
+		background-color: transparent;
+	}
+
+	.wrapper {
+		width: 100%;
+		border: none;
+	}
+}
+
+@media screen and (min-width: 451px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: lightslategray;
+	}
+}
